@@ -1,0 +1,71 @@
+/* 
+    CSS variables :
+    Colors
+    Fonts
+*/
+:root {
+  --color-green: #1ed760;
+  --color-green-light: #43e57d;
+  --color-blue: #2941ab;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-dark-grey: #222326;
+  --color-light-grey: #919496;
+  --color-facebook: #405a93;
+
+  --font-primary: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+/* Removing default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+/*************************************** 
+                Sign up page 
+****************************************/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-button {
+  width: 312px;
+  height: 45px;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social-media-button:hover {
+  transform: scale(1.05);
+}
+
+.socaial-media-button-facebook {
+  background-color: var(--color-facebook);
+  color: var(--color-white);
+}
+
+.socaial-media-button-google {
+  border: 1px solid black;
+
+  color: #535353;
+}
+
+.social-media-button span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.social-media-button-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
