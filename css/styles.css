@@ -232,7 +232,7 @@ footer .container {
 
 .top-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -304,6 +304,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .bottom-links li {
@@ -328,7 +329,6 @@ footer .container {
   header .wrapper {
     align-items: center;
   }
-
   .menu .burger-container {
     display: flex;
     flex-direction: column;
@@ -338,15 +338,44 @@ footer .container {
   .menu__list {
     flex-direction: column;
     display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s ease;
   }
   .menu__list span {
     transform: rotateZ(90deg);
   }
-
   #burger-input-trigger:checked ~ .menu__list {
     display: flex;
+    height: 100%;
   }
   #burger-input-trigger:checked ~ .burger-label {
     align-self: end;
+    margin-top: 10px;
+  }
+  .logo {
+    align-self: flex-start;
+  }
+  .showcase h1 {
+    font-size: 40px;
+  }
+  .showcase h2 {
+    font-size: 16px;
+  }
+  .btn-spotify {
+    width: 140px;
+    height: 38px;
+    font-size: 12px;
+  }
+  /*footer*/
+  .bottom-links {
+    flex-direction: column;
+  }
+  .bottom-links span {
+    display: block;
+    margin-top: 40px;
+  }
+  .top-links {
+    margin-top: 20px;
   }
 }
