@@ -11,30 +11,40 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="wrapper">
-        <div class="logo">
-          <a href="../index.html">
-            <img src="../assets/images/logo.svg" alt="spotify logo" />
-          </a>
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/images/logo.svg" alt="spotify logo" />
+            </a>
+          </div>
+          <nav class="menu">
+            <div class="burger-container">
+              <input type="checkbox" id="burger-input-trigger" />
+              <label class="burger-label" for="burger-input-trigger">
+                <div class="burger-icon">
+                  <span></span><span></span><span></span>
+                </div>
+              </label>
+              <ul class="menu__list">
+                <li class="menu__list__item">
+                  <a href="./music.html">music</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="./download.html">download</a>
+                </li>
+                <span>|</span>
+                <li class="menu__list__item">
+                  <a href="./signup.html">sign up</a>
+                </li>
+                <li class="menu__list__item">
+                  <a href="./login.html">log in</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list__item">
-              <a href="./music.html">music</a>
-            </li>
-            <li class="menu__list__item">
-              <a href="./download.html">download</a>
-            </li>
-            <span>|</span>
-            <li class="menu__list__item">
-              <a href="./signup.html">sign up</a>
-            </li>
-            <li class="menu__list__item menu__list__item--active">
-              <a href="./login.html">log in</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </header>
     </header>
     <!-- Main section -->
     <section class="main">login</section>
