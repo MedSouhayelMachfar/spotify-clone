@@ -29,43 +29,208 @@ body {
 /*************************************** 
                 Sign up page 
 ****************************************/
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.signup {
+  text-align: center;
 }
-.social-media-button {
+
+.logoInsc img {
+  width: 132px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.button-fb {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #405a93;
   width: 312px;
   height: 45px;
+  color: white;
   border-radius: 500px;
   display: flex;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.social-media-button:hover {
-  transform: scale(1.05);
+.button-fb:hover {
+  transform: scale(1.1);
 }
 
-.socaial-media-button-facebook {
-  background-color: var(--color-facebook);
-  color: var(--color-white);
-}
-
-.socaial-media-button-google {
-  border: 1px solid black;
-
-  color: #535353;
-}
-
-.social-media-button span {
+.button-fb span {
   margin-left: 20px;
   font-weight: bold;
 }
 
-.social-media-button-container {
-  height: 200px;
+.button-google {
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: white;
+  width: 312px;
+  height: 45px;
+  color: black;
+  border-radius: 500px;
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.button-google:hover {
+  transform: scale(1.1);
+}
+
+.button-google span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.line span {
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0px auto 1em;
+  color: rgb(127, 127, 127);
+  position: relative;
+  text-align: center;
+  width: 85%;
+}
+.line ::before,
+.line ::after {
+  border-top: 1px solid rgb(204, 204, 204);
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.8em;
+  width: 42%;
+}
+.formulaire {
+  text-align: center;
+}
+form {
+  display: block;
+  margin-top: 0em;
+  width: 450px;
+  height: 1186px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.label {
+  width: 250px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  font-weight: 700;
+}
+.email {
+  display: block;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+}
+.champ {
+  padding-bottom: 24px;
+}
+.email:hover {
+  box-shadow: inset 0 0 0 1px var(--essential-negative, #e91429);
+}
+.Date-Naiss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-date {
+  display: block;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+  width: 90px;
+  height: 52px;
+}
+.input-mois {
+  display: block;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+  width: 202.5px;
+  height: 52px;
+}
+.input-annee {
+  display: block;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+  width: 112.5px;
+  height: 52px;
+}
+.label-date {
+  width: 40px;
+  height: 20px;
+}
+.champ2 {
+  padding-bottom: 24px;
+}
+.choix {
+  display: flex;
+  flex-wrap: wrap;
+  font: 24px;
+  font-size: 1rem;
+}
+.type-lien a {
+  color: rgb(29, 185, 84);
+}
+.lien {
+  text-align: center;
+}
+.button_click {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background-color: var(--background-base, #1ed760);
+  color: var(--text-base, #000000);
+  border-radius: 500px;
+  font-size: inherit;
+  width: 165px;
+  height: 56px;
+  font-weight: 700;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button_click:hover {
+  transform: scale(1.1);
+}
+.button {
+  border: none;
+  background-color: white;
 }
