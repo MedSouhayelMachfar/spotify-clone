@@ -7,47 +7,83 @@
     <title>Spotify clone</title>
     <!--  Links  -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/music.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
-      <header>
-        <div class="wrapper">
-          <div class="logo">
-            <a href="../index.html">
-              <img src="../assets/images/logo.svg" alt="spotify logo" />
-            </a>
-          </div>
-          <nav class="menu">
-            <div class="burger-container">
-              <input type="checkbox" id="burger-input-trigger" />
-              <label class="burger-label" for="burger-input-trigger">
-                <div class="burger-icon">
-                  <span></span><span></span><span></span>
-                </div>
-              </label>
-              <ul class="menu__list">
-                <li class="menu__list__item">
-                  <a href="./music.html">music</a>
-                </li>
-                <li class="menu__list__item">
-                  <a href="./download.html">download</a>
-                </li>
-                <span>|</span>
-                <li class="menu__list__item">
-                  <a href="./signup.html">sign up</a>
-                </li>
-                <li class="menu__list__item">
-                  <a href="./login.html">log in</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../assets/images/logo.svg" alt="spotify logo" />
+          </a>
         </div>
-      </header>
+        <nav class="menu">
+          <div class="burger-container">
+            <input type="checkbox" id="burger-input-trigger" />
+            <label class="burger-label" for="burger-input-trigger">
+              <div class="burger-icon">
+                <span></span><span></span><span></span>
+              </div>
+            </label>
+            <ul class="menu__list">
+              <li class="menu__list__item menu__list__item--active">
+                <a href="./music.html">music</a>
+              </li>
+              <li class="menu__list__item">
+                <a href="./download.html">download</a>
+              </li>
+              <span>|</span>
+              <li class="menu__list__item">
+                <a href="./signup.html">sign up</a>
+              </li>
+              <li class="menu__list__item">
+                <a href="./login.html">log in</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Main section -->
-    <section class="main">music</section>
+    <section class="showcase">
+      <a href="#play-list"><div class="play-music">Start listening</div></a>
+    </section>
+    <!-- Play list section -->
+    <section id="play-list">
+      <div class="wrapper">
+        <h1>Trend</h1>
+        <div class="cards-container">
+          <article class="card">
+            <img src="./../assets/images/audio-bg/anewbeginning.jpg" />
+            <div>
+              <h3>a new beginning</h3>
+              <audio src="../assets/audio/anewbeginning.mp3" controls>
+                Your browser does not support the <code>audio</code> element.
+              </audio>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./../assets/images/audio-bg/creativeminds.jpg" />
+            <div>
+              <h3>creative minds</h3>
+              <audio src="../assets/audio/creativeminds.mp3" controls>
+                Your browser does not support the <code>audio</code> element.
+              </audio>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./../assets/images/audio-bg/littleidea.jpg" />
+            <div>
+              <h3>little idea</h3>
+              <audio src="../assets/audio/littleidea.mp3" controls>
+                Your browser does not support the <code>audio</code> element.
+              </audio>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer>
       <div class="wrapper">

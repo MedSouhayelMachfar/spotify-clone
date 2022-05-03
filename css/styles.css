@@ -6,6 +6,7 @@
 :root {
   --color-green: #1ed760;
   --color-green-light: #43e57d;
+  --color-light-blue: #0d72ea;
   --color-blue: #2941ab;
   --color-black: #000;
   --color-white: #fff;
@@ -21,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-primary);
