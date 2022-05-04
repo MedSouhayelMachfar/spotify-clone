@@ -73,6 +73,10 @@ article {
   background-color: var(--color-light-dark);
 }
 
+.bottom-section img {
+  width: 480px;
+}
+
 .bottom-section article {
   display: flex;
   flex-direction: column;
@@ -87,7 +91,7 @@ article {
   font-size: 40px;
   font-weight: bold;
   font-family: var(--font-primary);
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .bottom-section ul {
@@ -117,4 +121,11 @@ article {
 li:nth-child(2)::marker,
 li:nth-child(3)::marker {
   color: var(--color-green-army);
+}
+
+/* Responsive */
+@media screen and (max-width: 564px) {
+  .bottom-section img {
+    width: 100%;
+  }
 }
