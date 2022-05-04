@@ -1,0 +1,120 @@
+/* Showcase */
+.showcase {
+  height: 50vh;
+  background-image: none;
+  background: var(--color-green-soft);
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.music-showcase-logo {
+  width: 43px;
+  height: 60px;
+  position: relative;
+}
+.music-showcase-logo img:nth-child(1),
+.music-showcase-logo img:nth-child(2),
+.music-showcase-logo img:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.music-showcase-logo img:nth-child(2),
+.music-showcase-logo img:nth-child(3) {
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.music-showcase-logo img:nth-child(3) {
+  width: 15px;
+}
+
+.showcase h1 {
+  color: var(--color-black);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  margin: 20px 0;
+}
+
+.showcase p {
+  font-size: 16px;
+  text-transform: lowercase;
+  color: var(--color-black);
+  text-align: center;
+  font-family: var(--font-primary);
+  margin: 20px 0;
+}
+.showcase p::first-letter {
+  text-transform: uppercase;
+}
+
+.showcase button {
+  padding: 14px 32px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.showcase button:hover {
+  transform: scale(1.05);
+}
+
+/* Second section */
+.bottom-section {
+  background-color: var(--color-light-dark);
+}
+
+.bottom-section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.bottom-section h1 {
+  color: var(--color-white);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  margin: 20px 0;
+}
+
+.bottom-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-section ul li {
+  margin: 10px 20px;
+  text-transform: uppercase;
+}
+
+.bottom-section ul :is(li:nth-child(1), li:nth-child(2), li:nth-child(3)) {
+  color: var(--color-white);
+}
+
+.bottom-section ul :not(li:nth-child(1), li:nth-child(2), li:nth-child(3)) {
+  color: var(--color-green-army);
+  text-decoration: underline;
+}
+
+.bottom-section ul li:nth-child(1)::marker {
+  content: "";
+}
+li:nth-child(2)::marker,
+li:nth-child(3)::marker {
+  color: var(--color-green-army);
+}

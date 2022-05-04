@@ -6,9 +6,12 @@
 :root {
   --color-green: #1ed760;
   --color-green-light: #43e57d;
+  --color-green-soft: #19e68c;
+  --color-green-army: #1f822c;
   --color-light-blue: #0d72ea;
   --color-blue: #2941ab;
   --color-black: #000;
+  --color-light-dark: #222326;
   --color-white: #fff;
   --color-dark-grey: #222326;
   --color-light-grey: #919496;
