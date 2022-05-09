@@ -4,13 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/icons/favicon.png" />
-    <title>Spotify clone</title>
+    <title>Login</title>
     <!--  Links  -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <!-- Header -->
-    <main></main>
+    <main>
+      <div class="logoInsc">
+        <a href="../index.html">
+          <img src="../assets/images/Spotify_logo_with_text.svg" alt="spotify logo" />
+        </a>
+      </div>
+
+      <div class="line">
+        <span></span>
+       </div>
+      
+       <div><h2 class="signup">To continue, log in to Spotify.</h2></div>
+
+       <div class="button-fb">
+        <span>Continue with Facebook</span>
+    </div>
+    <div class="button-Apple">
+      <span>Continue with APPLE</span>
+   </div>
+    <div class="button-google">
+        <span>Continue with Google</span>
+     </div>
+    
+     <div class="line2">
+      <span>or</span>
+     </div>
+
+     <form>
+      <div class="champ_Signup">
+          <div class="label">
+              <label for="mail">Email address or username</label>
+          </div>
+          <div><input type="email" name="email" class="email" placeholder="Email address or username"></div>
+      </div>
+
+      <div class="champ_Signup">
+        <div class="label">
+            <label for="password">Password</label>
+        </div>
+        <div><input type="password" name="email" class="email" placeholder="Password"></div>
+    </div>
+
+      <div>
+        <a class="Forgot_password" href="./pages/music.html">Forgot your password ?</a>
+      </div>
+
+      <div class="champ_Signup">
+        <div class="label">
+        <input type="checkbox" name="souvenir" id="Check_box"> Remember me </div>
+      </div>
+
+      <div class="button">
+        <input class="button" type="submit" value="Log in">
+      </div>
+
+      <div class="line">
+        <span></span>
+       </div>
+
+       <div><h2 class="signup2"></h2>You do not have an account ?</div>
+      
+       <div class="button-spotify">
+        <span>I don't have spotify</span>
+     </div>
+    </main>
     <!-- Scripts -->
     <script src="./js/scripts.js"></script>
   </body>

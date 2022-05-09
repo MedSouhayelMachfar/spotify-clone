@@ -1,0 +1,247 @@
+:root {
+  --color-green: #1ed760;
+  --color-green-light: #43e57d;
+  --color-blue: #2941ab;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-dark-grey: #222326;
+  --color-light-grey: #919496;
+  --color-facebook: #405a93;
+
+  --font-primary: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+/* Removing default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+/*************************************** 
+                Login page 
+****************************************/
+
+.signup {
+  text-align: center;
+}
+
+.logoInsc img {
+  width: 132px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.line span {
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0px auto 1em;
+  color: rgb(127, 127, 127);
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.line ::before,
+.line ::after {
+  border-top: 1px solid rgb(204, 204, 204);
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.8em;
+  width: 100%;
+}
+
+.button-fb {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #405a93;
+  width: 450px;
+  height: 48px;
+  color: white;
+  border-radius: 500px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button-fb:hover {
+  transform: scale(1.1);
+}
+
+.button-fb span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.button-google {
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: white;
+  width: 450px;
+  height: 48px;
+  color: black;
+  border-radius: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button-google:hover {
+  transform: scale(1.1);
+}
+
+.button-google span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.button-Apple {
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: black;
+  width: 450px;
+  height: 48px;
+  color: white;
+  border-radius: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button-Apple:hover {
+  transform: scale(1.1);
+}
+
+.button-Apple span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.line2 span {
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin: 0px auto 1em;
+  color: rgb(127, 127, 127);
+  position: relative;
+  text-align: center;
+  width: 85%;
+}
+.line2 ::before,
+.line2 ::after {
+  border-top: 1px solid rgb(204, 204, 204);
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.8em;
+  width: 42%;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+  width: 450px;
+  height: 1186px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.label {
+  width: 250px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  font-weight: 700;
+}
+.email {
+  display: block;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+}
+.champ_Signup {
+  padding-bottom: 24px;
+}
+.email:hover {
+  box-shadow: inset 0 0 0 1px var(--essential-negative, #e91429);
+}
+
+.Forgot_password {
+  font-size: 16px;
+  font-family: var(--font-primary);
+  padding-bottom: 24px;
+}
+.Forgot_password {
+  text-decoration: none;
+  color: var(--color-dark-grey);
+  font-weight: 700;
+  transition: 0.2s ease-out;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.button input {
+  position: relative;
+  background-color: var(--color-green);
+  color: var(--text-base, #000000);
+  border-radius: 500px;
+  font-size: inherit;
+  padding: 14px 32px;
+  font-weight: 700;
+  width: 389px;
+  height: 42px;
+  border: 1px solid var(--color-green);
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.button :hover {
+  transform: scale(1.1);
+}
+.h2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+
+.button-spotify {
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+  background-color: white;
+  width: 450px;
+  height: 48px;
+  color: black;
+  border-radius: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button-spotify.button {
+  transform: scale(1.1);
+}
+
+.button-spotify span {
+  margin-left: 20px;
+  font-weight: bold;
+}
