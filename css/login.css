@@ -22,10 +22,10 @@ body {
 }
 
 /*************************************** 
-                Login page 
+              Login page 
 ****************************************/
 
-.signup {
+.login {
   text-align: center;
 }
 
@@ -198,23 +198,31 @@ form {
   align-items: center;
   padding-bottom: 24px;
 }
-.button input {
+.button_click {
+  cursor: pointer;
+  width: 100%;
   position: relative;
-  background-color: var(--color-green);
+  background-color: var(--background-base, #1ed760);
   color: var(--text-base, #000000);
   border-radius: 500px;
   font-size: inherit;
-  padding: 14px 32px;
+  width: 405px;
+  height: 49px;
   font-weight: 700;
-  width: 389px;
-  height: 42px;
-  border: 1px solid var(--color-green);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  cursor: pointer;
-  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.button :hover {
+.button_click:hover {
   transform: scale(1.1);
+}
+.button {
+  border: none;
+  background-color: white;
 }
 .h2 {
   font-size: 16px;

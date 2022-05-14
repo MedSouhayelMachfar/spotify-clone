@@ -138,6 +138,21 @@ form {
   background: transparent;
   font-size: 1rem;
 }
+
+.input {
+  display: block;
+  line-height: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px;
+  box-shadow: inset 0 0 0 1px;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+}
+
 .champ {
   padding-bottom: 24px;
 }
@@ -233,4 +248,9 @@ form {
 .button {
   border: none;
   background-color: white;
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
 }

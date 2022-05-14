@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/icons/favicon.png" />
-    <title>Sign up</title>
+    <title>Document</title>
+    
     <!--  Links  -->
     <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
     <!-- Header -->
+    <form name="form" onsubmit="return verif_signup(event)">
     <div class="logoInsc">
         <a href="../index.html">
           <img src="../assets/images/Spotify_logo_with_text.svg" alt="spotify logo" />
@@ -31,34 +33,39 @@
         </div>
         
         <div><h2 class="formulaire">Sign up with you email address </h2></div>
+        
 
-        <form>
+        
         <div class="champ">
             <div class="label">
                 <label for="mail">What's your email?</label>
             </div>
-            <div><input type="email" name="email" class="email" placeholder="Enter your email."></div>
+            <div><input class="input" type="email" id="pmail" placeholder="Enter your email."></div>
+            <div><span class="error" id="erroremail"></span></div>
         </div>
 
         <div class="champ">
             <div class="label">
                 <label for="mail">Confirm your email</label>
             </div>
-            <div><input type="email" name="email" class="email" placeholder="Enter your email again."></div>
+            <div><input class="input" type="email" id="cemail" placeholder="Enter your email again."></div>
+            <div><span class="error" id="errorcemail"></span></div>
         </div>
 
         <div class="champ">
             <div class="label">
                 <label for="password">Create a password</label>
             </div>
-            <div><input type="password" name="email" class="email" placeholder="Create a password"></div>
+            <div><input class="input" type="password" id="mdp" placeholder="Create a password"></div>
+            &éasssss
         </div>
 
         <div class="champ">
             <div class="label">
                 <label for="nom">What should we call you?</label>
             </div>
-            <div><input type="text" name="email" class="email" placeholder="Enter a profile name"></div>
+            <div><input type="text" name="name" class="email" id="name" placeholder="Enter a profile name"></div>
+            <div><span class="error" id="errorname"></span></div>
         </div>
 
         <div class="champ2">
@@ -107,11 +114,11 @@
             </div>
             <div class="choix">
                 <div class="radio">
-                    <input type="radio" id="genre" name="genre" >
+                    <input type="radio" id="genre" name="genreh" >
                     <span>Male</span>
                 </div>
                 <div class="radio">
-                    <input type="radio" id="genre" name="genre" >
+                    <input type="radio" id="genre" name="genref" >
                     <span>Female</span>
                 </div>
             </div>
@@ -119,14 +126,14 @@
 
         <div class="champ">
             <div class="check">
-                <input type="checkbox" id="marketing" name="marketing">
+                <input type="checkbox" id="marketing" name="marketing1">
                 <span class="marketing">I would prefer not to receive marketing messages from Spotify</span>
             </div>
         </div>
 
         <div class="champ">
             <div class="check">
-                <input type="checkbox" id="marketing" name="marketing">
+                <input type="checkbox" id="marketing" name="marketing2">
                 <span class="marketing">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.</span>
             </div>
         </div>
@@ -168,7 +175,9 @@
             </p>
         </div>
 
-        </form>
+     </form>
+        
 </header>
+<script src="../js/scripts.js"></script>
 </body>
 </html>
