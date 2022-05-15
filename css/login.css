@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--color-light-grey);
+  border-bottom: 1px solid var(--color-super-light-grey);
 }
 
 .logoInsc img {
@@ -52,6 +52,22 @@ body {
   height: 42px;
   margin: 0 auto;
   display: flex;
+}
+
+.social-media-auth h2 {
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.social-media-auth div {
+  margin: 20px auto;
+}
+
+.social-media-auth span {
+  text-transform: uppercase;
 }
 
 .button-fb {
@@ -66,10 +82,6 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.button-fb:hover {
-  transform: scale(1.1);
-}
-
 .button-fb span {
   margin-left: 20px;
   font-weight: bold;
@@ -82,15 +94,16 @@ body {
   background-color: white;
   width: 450px;
   height: 48px;
-  color: black;
+  color: var(--color-light-grey);
   border-radius: 500px;
-  border: 1px solid black;
+  border: 1px solid var(--color-light-grey);
   display: flex;
   align-items: center;
   cursor: pointer;
 }
+
 .button-google:hover {
-  transform: scale(1.1);
+  border: 1px solid var(--color-black);
 }
 
 .button-google span {
@@ -112,13 +125,16 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.button-Apple:hover {
-  transform: scale(1.1);
-}
 
 .button-Apple span {
   margin-left: 20px;
   font-weight: bold;
+}
+
+.button-fb:hover,
+.button-google:hover,
+.button-apple:hover {
+  border: 1px solid var(--color-black);
 }
 
 .line2 span {
@@ -249,4 +265,9 @@ form {
 .button-spotify span {
   margin-left: 20px;
   font-weight: bold;
+}
+
+.button-Apple img {
+  width: 24px;
+  height: 24px;
 }
