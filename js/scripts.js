@@ -1,12 +1,15 @@
-function verif_signup(event) {
+/**
+ *
+ * Sign up submit handler
+ *
+ */
+
+function verify_signup(event) {
   event.preventDefault();
-  var pmail = document.forms["form"]["pmail"];
-  var cemail = document.forms["form"]["cemail"];
-  var pattern =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  var mdp = document.forms["form"]["mdp"];
-  var name = document.forms["form"]["name"];
-  var pattern2 = /^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/;
+  let pmail = document.forms["form"]["pmail"];
+  let cemail = document.forms["form"]["cemail"];
+  let mdp = document.forms["form"]["mdp"];
+  let name = document.forms["form"]["name"];
 
   if (!pmail.value) {
     document.getElementById("erroremail").innerHTML =
@@ -34,7 +37,7 @@ function verif_signup(event) {
     document.getElementById("errorcemail").innerHTML = "";
   }
 
-  if (!pmail.value.match(pattern)) {
+  if (!isValidEmail(pmail.value)) {
     document.getElementById("errorcemail").innerHTML =
       "Veuillez vérifier votre mail";
     pmail.focus();
@@ -52,7 +55,7 @@ function verif_signup(event) {
     document.getElementById("errormdp").innerHTML = "";
   }
 
-  if (!mdp.value.match(pattern2)) {
+  if (!isValidPassword(mdp.value)) {
     document.getElementById("errormdp").innerHTML =
       "Le mot de passe doit contenir au moins 8 caractères, dont au moins : Une lettre majuscule, Une lettre minuscule et un nombre et un caractére speciale";
     mdp.focus();
@@ -70,45 +73,48 @@ function verif_signup(event) {
     document.getElementById("errorname").innerHTML = "";
   }
 }
-function verif_login(event) {
-  event.preventDefault();
-  var lmail = document.forms["forml"]["lmail"];
-  var pattern =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  var mdp = document.forms["forml"]["psw"];
-  var pattern2 = /^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/;
 
-  if (!lmail.value) {
+/**
+ *
+ * Login page submit handler
+ *
+ */
+function verify_login(event) {
+  event.preventDefault();
+  let emailInput = document.forms["forml"]["lmail"];
+  let mdpInput = document.forms["forml"]["psw"];
+
+  if (!emailInput.value) {
     document.getElementById("erroremail").innerHTML =
       "Veuillez saisir votre mail";
-    lmail.focus();
+    emailInput.focus();
     return false;
   } else {
     document.getElementById("erroremail").innerHTML = "";
   }
 
-  if (!mdp.value) {
+  if (!mdpInput.value) {
     document.getElementById("errormdp").innerHTML =
       "Veuillez saisir votre mot de passe";
-    mdp.focus();
+    mdpInput.focus();
     return false;
   } else {
     document.getElementById("errormdp").innerHTML = "";
   }
 
-  if (!mdp.value.match(pattern2)) {
+  if (!isValidPassword(mdpInput.value)) {
     document.getElementById("errormdp").innerHTML =
       "Le mot de passe doit contenir au moins 8 caractères, dont au moins : Une lettre majuscule, Une lettre minuscule et un nombre et un caractére speciale";
-    mdp.focus();
+    mdpInput.focus();
     return false;
   } else {
     document.getElementById("errormdp").innerHTML = "";
   }
 
-  if (!lmail.value.match(pattern)) {
+  if (!isValidEmail(emailInput.value)) {
     document.getElementById("errorcemail").innerHTML =
       "Veuillez vérifier votre mail";
-    lmail.focus();
+    emailInput.focus();
     return false;
   } else {
     document.getElementById("errorcemail").innerHTML = "";

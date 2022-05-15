@@ -38,7 +38,8 @@
       <div class="line2">
         <span>or</span>
       </div>
-      <form name="forml" onsubmit="return verif_login(event)">
+      <!-- Form -->
+      <form name="forml" onsubmit="return verify_login(event)">
         <div class="champ_Signup">
           <div class="label">
             <label for="mail">Email address or username</label>
@@ -78,7 +79,7 @@
             <div class="champ_Signup">
               <div class="label">
                 <input type="checkbox" name="souvenir" id="Check_box" />
-                Remember me
+                <span>Remember me</span>
               </div>
             </div>
           </div>
@@ -100,6 +101,7 @@
       </form>
     </main>
     <!-- Scripts -->
+    <script src="../js/validators.js"></script>
     <script src="../js/scripts.js"></script>
   </body>
 </html>
