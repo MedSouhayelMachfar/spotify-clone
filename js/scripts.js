@@ -15,11 +15,13 @@ function verify_signup(event) {
   let cemail = document.forms["form"]["cemail"];
   let mdp = document.forms["form"]["mdp"];
   let name = document.forms["form"]["name"];
+
   // error elements
   let errorEmailElement = document.getElementById("erroremail");
   let errorCeEmailElement = document.getElementById("errorcemail");
   let errorNameElement = document.getElementById("errorname");
   let errorPasswordElement = document.getElementById("errormdp");
+
   // Validating form inputs
   if (isEmpty(pmail.value)) {
     errorEmailElement.innerHTML = "Veuillez saisir votre mail";
@@ -89,9 +91,11 @@ function verify_login(event) {
   event.preventDefault();
 
   // Getting the DOM elements
+  // main elements
   let emailInput = document.forms["forml"]["lmail"];
   let mdpInput = document.forms["forml"]["psw"];
 
+  //error elements
   let errorEmailElement = document.getElementById("erroremail");
   let errorPwdElement = document.getElementById("errormdp");
 
