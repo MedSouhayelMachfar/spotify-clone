@@ -32,3 +32,11 @@ function isValidPassword(pwd) {
 function isEmpty(ch) {
   return ch === "" ? true : false;
 }
+
+// Compare 2 string
+// To be valid : if the two strings are the same
+// Return true if it's valid
+// Return false if it's  not valid
+function isSimilar(firstString, secondString) {
+  return firstString === secondString ? true : false;
+}

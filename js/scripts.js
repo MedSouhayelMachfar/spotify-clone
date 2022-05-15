@@ -36,7 +36,7 @@ function verify_signup(event) {
   } else {
     errorCeEmailElement.innerHTML = "";
   }
-  if (cemail.value !== pmail.value) {
+  if (!isSimilar(cemail.value, pmail.value)) {
     errorCeEmailElement.innerHTML = "les emails doivent correspondre";
     cemail.focus();
     return false;
@@ -52,7 +52,7 @@ function verify_signup(event) {
     errorCeEmailElement.innerHTML = "";
   }
 
-  if (!mdp.value) {
+  if (isEmpty(mdp.value)) {
     errorPasswordElement.innerHTML = "Veuillez saisir votre mot de passe";
     mdp.focus();
     return false;
@@ -69,7 +69,7 @@ function verify_signup(event) {
     errorPasswordElement.innerHTML = "";
   }
 
-  if (!name.value) {
+  if (isEmpty(name.value)) {
     errorNameElement.innerHTML = "Veuillez saisir votre Nom";
     name.focus();
     return false;
@@ -96,7 +96,7 @@ function verify_login(event) {
   let errorPwdElement = document.getElementById("errormdp");
 
   // Validating form inputs
-  if (!emailInput.value) {
+  if (isEmpty(emailInput.value)) {
     errorEmailElement.innerHTML = "Veuillez saisir votre mail";
     emailInput.focus();
     return false;
@@ -104,7 +104,7 @@ function verify_login(event) {
     errorEmailElement.innerHTML = "";
   }
 
-  if (!mdpInput.value) {
+  if (isEmpty(mdpInput.value)) {
     errorPwdElement.innerHTML = "Veuillez saisir votre mot de passe";
     mdpInput.focus();
     return false;
