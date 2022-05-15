@@ -317,3 +317,17 @@ form {
   margin-left: 10px;
   cursor: default;
 }
+
+.erroremail {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  color: red;
+}
+
+.errormdp {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  color: red;
+}

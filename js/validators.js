@@ -24,3 +24,11 @@ function isValidPassword(pwd) {
   let regexPassword = /^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/;
   return pwd.match(regexPassword) ? true : false;
 }
+
+// Empty string validation
+// To be valid : the string should be empty
+// Return true if it's valid
+// Return false if it's  not valid
+function isEmpty(ch) {
+  return ch === "" ? true : false;
+}
