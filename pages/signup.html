@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/icons/favicon.png" />
-    <title>Document</title>
-
+    <title>Signup</title>
     <!--  Links  -->
     <link rel="stylesheet" href="../css/signup.css" />
   </head>
   <body>
     <!-- Header -->
-    <form name="form" onsubmit="return verify_signup(event)">
+    <header class="signup-header">
       <div class="logoInsc">
         <a href="../index.html">
           <img
@@ -21,7 +20,7 @@
           />
         </a>
       </div>
-      <div><h1 class="signup">Sign up for free to start listening.</h1></div>
+      <h1>Sign up for free to start listening.</h1>
 
       <div class="button-fb">
         <img src="../assets/images/facebook.svg" alt="Facebook Button" />
@@ -34,9 +33,11 @@
       <div class="line">
         <span>or</span>
       </div>
+      <h2 class="formulaire">Sign up with you email address</h2>
+    </header>
 
-      <div><h2 class="formulaire">Sign up with you email address</h2></div>
-
+    <!-- Form -->
+    <form name="form" onsubmit="verify_signup(event)">
       <div class="champ">
         <div class="label">
           <label for="mail">What's your email?</label>
@@ -49,7 +50,9 @@
             placeholder="Enter your email."
           />
         </div>
-        <div><span class="error" id="erroremail"></span></div>
+        <div class="error-area">
+          <span class="error" id="erroremail"></span>
+        </div>
       </div>
 
       <div class="champ">
@@ -64,7 +67,9 @@
             placeholder="Enter your email again."
           />
         </div>
-        <div><span class="error" id="errorcemail"></span></div>
+        <div class="error-area">
+          <span class="error" id="errorcemail"></span>
+        </div>
       </div>
 
       <div class="champ">
@@ -79,7 +84,7 @@
             placeholder="Create a password"
           />
         </div>
-        &éasssss
+        <div class="error-area"><span class="error" id="errormdp"></span></div>
       </div>
 
       <div class="champ">
@@ -95,7 +100,7 @@
             placeholder="Enter a profile name"
           />
         </div>
-        <div><span class="error" id="errorname"></span></div>
+        <div class="error-area"><span class="error" id="errorname"></span></div>
       </div>
 
       <div class="champ2">
@@ -109,18 +114,18 @@
             </div>
             <input
               type="text"
-              name="email"
               class="input-date"
               inputmode="numeric"
               maxlength="2"
               placeholder="DD"
+              id="date-day"
             />
           </div>
           <div class="Mois">
             <div class="label-date">
               <label for="Month" class="label">Month</label>
             </div>
-            <select id="month" name="month" class="input-mois">
+            <select id="date-month" name="month" class="input-mois">
               <option selected disabled value="">Month</option>
               <option value="01">January</option>
               <option value="02">February</option>
@@ -147,10 +152,12 @@
               inputmode="numeric"
               maxlength="4"
               placeholder="YYYYY"
+              id="date-year"
             />
           </div>
         </div>
       </div>
+      <div class="error-area"><span class="error" id="errorDate"></span></div>
 
       <div class="champ">
         <div class="label">
@@ -158,11 +165,11 @@
         </div>
         <div class="choix">
           <div class="radio">
-            <input type="radio" id="genre" name="genreh" />
+            <input type="radio" id="genreM" name="genre" checked />
             <span>Male</span>
           </div>
           <div class="radio">
-            <input type="radio" id="genre" name="genref" />
+            <input type="radio" id="genreF" name="genre" />
             <span>Female</span>
           </div>
         </div>
@@ -170,7 +177,7 @@
 
       <div class="champ">
         <div class="check">
-          <input type="checkbox" id="marketing" name="marketing1" />
+          <input type="checkbox" id="marketing1" name="marketing1" />
           <span class="marketing"
             >I would prefer not to receive marketing messages from Spotify</span
           >
@@ -179,7 +186,7 @@
 
       <div class="champ">
         <div class="check">
-          <input type="checkbox" id="marketing" name="marketing2" />
+          <input type="checkbox" id="marketing2" name="marketing2" />
           <span class="marketing"
             >Share my registration data with Spotify's content providers for
             marketing purposes. Note that your data may be transferred to a
@@ -232,14 +239,9 @@
           </span>
         </p>
       </div>
-
-      <div class="signup">
-        <button type="submit" class="button">
-          <div class="button_click">Sign up</div>
-          <div class="Button-focus"></div>
-        </button>
+      <div class="signup-container">
+        <button type="submit" class="button_submit">sign up</button>
       </div>
-
       <div class="champ">
         <p class="lien">
           <span class="type-lien"

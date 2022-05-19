@@ -33,8 +33,15 @@ body {
 /*************************************** 
                 Sign up page 
 ****************************************/
-.signup {
+.signup-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+.signup-header h1 {
   text-align: center;
+  font-size: 32px;
 }
 
 .logoInsc img {
@@ -42,6 +49,36 @@ body {
   height: 42px;
   margin: 0 auto;
   display: flex;
+}
+
+.signup-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button_submit {
+  width: 125px;
+  background-color: var(--color-green);
+  color: var(--text-base, #000000);
+  border-radius: 500px;
+  border: none;
+  margin: 0 auto;
+  font-size: inherit;
+  height: 49px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+.button_submit::first-letter {
+  text-transform: uppercase;
+}
+.button_submit:hover {
+  transform: scale(1.05);
 }
 
 .button-fb {
@@ -57,7 +94,7 @@ body {
   cursor: pointer;
 }
 .button-fb:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .button-fb span {
@@ -80,7 +117,7 @@ body {
   cursor: pointer;
 }
 .button-google:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .button-google span {
@@ -227,6 +264,7 @@ form {
 .lien {
   text-align: center;
 }
+/* Fixes */
 .button_click {
   cursor: pointer;
   width: 100%;
@@ -253,8 +291,17 @@ form {
   border: none;
   background-color: white;
 }
+.error-area {
+  height: 30px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  color: red;
+}
 
-.error {
-  color: #d8000c;
-  background-color: #ffbaba;
+.radio {
+  margin: 10px 20px;
+}
+
+.radio:first-child {
+  margin-left: 0px;
 }
