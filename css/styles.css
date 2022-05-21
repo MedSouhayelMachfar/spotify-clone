@@ -140,7 +140,7 @@ header .wrapper {
 
 /* Section */
 .showcase {
-  min-height: 600px;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,34 +158,37 @@ header .wrapper {
   background: url("../assets/images/showcaseBackground.svg") no-repeat;
   transform: rotate(0deg);
   background-position: right center;
-  background-size: auto 100%;
+  background-size: auto 150%;
   background-color: var(--color-blue);
 }
 
 .showcase-wrapper {
-  height: 300px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
+  align-items: center;
   margin-top: -120px;
 }
 
-.showcase p {
-  font-size: 14px;
-  margin: 16px 0px 32px;
-  text-transform: uppercase;
-}
-
 .showcase h1 {
+  text-transform: lowercase;
+  font-size: 156px;
+  text-align: center;
+  padding-left: -50px;
+}
+.showcase h1 span {
+  margin-left: 100px;
+}
+.showcase h1::first-letter {
   text-transform: uppercase;
-  font-size: 60px;
 }
 
 .showcase h2 {
   text-transform: capitalize;
   font-size: 24px;
   font-weight: 400;
+  text-align: center;
 }
 
 .btn {
@@ -328,6 +331,17 @@ footer .container {
 }
 
 /* Responsive */
+@media screen and (max-width: 1000px) {
+  .showcase h1 {
+    text-transform: lowercase;
+    font-size: 104px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .showcase h1 span {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .burger-label {
     display: block;
@@ -363,11 +377,12 @@ footer .container {
     align-self: flex-start;
   }
   .showcase h1 {
-    font-size: 40px;
+    font-size: 48px;
   }
   .showcase h2 {
     font-size: 16px;
   }
+
   .btn-spotify {
     width: 140px;
     height: 38px;
